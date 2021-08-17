@@ -1,0 +1,392 @@
+/**
+--- 01 TYPOGRAPHY SYSTEM
+Poppins 400, 500. 600,, 700
+
+- FONT WEIGHTS:
+default: 400
+
+- LINE HEIGHTS:
+default: 1
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 02 COLORS
+
+- Primary: 
+
+
+- Tints: 
+#4a89dc; 
+
+- Shades:
+
+- Accents:
+
+- Greys: 
+#555;
+#333;
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS
+
+--- 07 WHITE SPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+**/
+
+.main-container {
+  max-width: 1140px;
+  margin: 3.2rem auto;
+
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+}
+
+.container {
+  padding: 1.8rem 3.2rem;
+}
+
+/********************************/
+/*******Header Section **********/
+/********************************/
+
+.section-header {
+  background-image: url("./download.svg");
+  background-color: #4a89dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7.4rem;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.user-face {
+  height: 250px;
+
+  object-fit: fill;
+
+  position: relative;
+  top: 50px;
+
+  border: 8px solid #fff;
+}
+
+.user-detail {
+  color: #fff;
+}
+
+.user-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.user-designation {
+  font-size: 1.2rem;
+  letter-spacing: 1.6;
+  letter-spacing: 1px;
+}
+
+.role-name {
+  font-size: 1.2rem;
+}
+
+/********************************/
+/*******About Me Section*********/
+/********************************/
+
+.section-about-me {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+
+  padding-top: 4.8rem;
+}
+
+.about-me-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #434a54;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-detail {
+  display: grid;
+
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+
+  align-items: center;
+}
+
+.detail-icon {
+  grid-row: 1/-1;
+  font-size: 1.8rem;
+  color: #4a89dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-header {
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+/********************************/
+/*******Professional Skills Section*********/
+/********************************/
+
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 4.8rem;
+  row-gap: 3rem;
+
+  margin-bottom: 4.8rem;
+}
+
+.tech-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.other-technology-text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  font-weight: 500;
+  margin-bottom: 2.8rem;
+}
+
+.other-tech-list {
+  list-style-type: none;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.other-tech {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  border: 1px solid #4a89dc;
+  color: #4a89dc;
+  padding: 0.8rem 1.2rem;
+  letter-spacing: 1.2px;
+
+  border-radius: 10px;
+}
+
+/********************************/
+/*******Professional Skills Section*********/
+/********************************/
+
+.timeline {
+  border-left: 2px solid #e6e9ed;
+  padding-left: 3rem;
+}
+
+.timeline-card {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.075);
+
+  padding: 2.4rem 2.4rem;
+  border-left-color: #4a89dc;
+}
+
+.timeline-card:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 10px;
+  height: 12px;
+  width: 12px;
+  border: 2px solid #4a89dc;
+
+  left: -3.6rem;
+}
+
+.timeline-card:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  height: 2px;
+  width: 2.7rem;
+  background-color: #4a89dc;
+
+  left: -2.7rem;
+  top: 2.85rem;
+}
+
+.designation-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  letter-spacing: 0.3px;
+}
+
+.company-name {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  padding-left: 2px;
+
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.info {
+  display: flex;
+
+  gap: 2rem;
+  margin-top: 8px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.8rem;
+}
+
+.timeline-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.time-worked {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #6c757d;
+  font-weight: 600;
+  letter-spacing: 1.5;
+
+  text-transform: uppercase;
+}
+
+.company-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 1rem;
+}
+
+.company-link a {
+  text-decoration: none;
+  color: #4a89dc;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 0.9rem;
+
+  color: #aaa;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+}
+
+.responsibilities {
+  margin: 1rem 0 0 2rem;
+}
+
+.resp {
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.tech-header {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.tech-names {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4a89dc;
+
+  display: flex;
+  gap: 0.8rem;
+}
+
+/*****************************/
+/*********Additional Info Section****/
+/*****************************/
+
+.additional-info .heading-tertiary {
+  text-align: center;
+}
+
+.add-info-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-info-container ul {
+  list-style-type: none;
+}
+
+.add-info-container ul li {
+  line-height: 2;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.add-info-container ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #00a8a8;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}

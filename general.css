@@ -1,0 +1,162 @@
+/**
+--- 01 TYPOGRAPHY SYSTEM
+
+- FONT WEIGHTS:
+default: 400
+
+- LINE HEIGHTS:
+default: 1
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 02 COLORS
+
+- Primary: #4a89dc;
+
+- Tints: #fdf2e9
+
+- Shades:
+
+- Accents:
+
+- Greys: 
+#555;
+#333;
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS
+
+--- 07 WHITE SPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+**/
+
+/* ********************** */
+/* GENERAL COMPONENTS */
+/* ********************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  color: #434a54;
+}
+
+.heading-primary,
+.heading-secondary {
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.02;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #434a54;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.section-seperator {
+  height: 1px;
+  border-color: #e6e9ed;
+  opacity: 0.25;
+  margin: 2rem 0;
+  background-color: #adb5bd;
+}
+
+.center {
+  text-align: center;
+}
+
+.progress-bar-container {
+  height: 15px;
+  background-color: #ccc;
+  position: relative;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  position: absolute;
+  background-color: #4a89dc;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.progress-bar-animate60 {
+  animation: progress-bar-60 2s forwards;
+}
+
+.progress-bar-animate70 {
+  animation: progress-bar-70 2s forwards;
+}
+
+.progress-bar-animate80 {
+  animation: progress-bar-80 2s forwards;
+}
+
+.progress-bar-animate90 {
+  animation: progress-bar-90 2s forwards;
+}
+@keyframes progress-bar-60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes progress-bar-70 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes progress-bar-80 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes progress-bar-90 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
