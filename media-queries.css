@@ -1,6 +1,11 @@
 @media only screen and (max-width: 600px) {
   .section-header {
     flex-direction: column;
+    gap: 4rem;
+  }
+
+  .container {
+    padding: 3.2rem 1rem;
   }
 
   .user-detail {
@@ -52,5 +57,18 @@
 
   .add-info-container {
     flex-direction: column;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-card:before {
+    left: -1.6rem;
+  }
+
+  .timeline-card:after {
+    width: 0.7rem;
+    left: -0.7rem;
   }
 }
